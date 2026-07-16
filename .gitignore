@@ -1,0 +1,16 @@
+# ~/.claude/ から誤ってコピーしてしまいがちな機密・自動生成ファイル（保険）
+.credentials.json
+*.jsonl
+*.log
+projects/
+sessions/
+session-env/
+shell-snapshots/
+file-history/
+paste-cache/
+backups/
+cache/
+debug/
+stats-cache.json
+.last-cleanup
+.last-update-result.json

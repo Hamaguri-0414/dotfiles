@@ -1,0 +1,20 @@
+{
+  "permissions": {
+    "defaultMode": "auto",
+    "additionalDirectories": [
+      "~/Documents/Obsidian/保管庫"
+    ]
+  },
+  "model": "fable",
+  "language": "Japanese",
+  "effortLevel": "high",
+  "voice": {
+    "enabled": true,
+    "mode": "hold"
+  },
+  "skipAutoPermissionPrompt": true,
+  "voiceEnabled": true,
+  "feedbackSurveyState": {
+    "lastShownTime": 1754036090201
+  }
+}
