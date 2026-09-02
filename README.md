@@ -16,6 +16,9 @@ claude/                  # Claude Code の設定
 
 ghostty/                 # Ghostty（ターミナル）の設定
 └── config               # フォント・背景透過・画面分割キーバインドなど
+
+zsh/                     # zsh の設定
+└── prompt.zsh           # プロンプトの見た目（カレントフォルダ・時刻表示など）
 ```
 
 ## 使い方
@@ -37,6 +40,23 @@ cp ghostty/config ~/Library/Application\ Support/com.mitchellh.ghostty/config
 ```
 
 配置後は Ghostty 上で Cmd + Shift + , を押すと設定をリロードできます。
+
+### zsh プロンプト
+
+`zsh/prompt.zsh` を `~/.zsh/` に配置し、`~/.zshrc` から読み込んでください。
+
+```sh
+mkdir -p ~/.zsh
+cp zsh/prompt.zsh ~/.zsh/prompt.zsh
+```
+
+`~/.zshrc` に以下の1行を追加します。
+
+```zsh
+source "$HOME/.zsh/prompt.zsh"
+```
+
+`.zshrc` 本体はマシン固有の設定や機密情報を含むため、このリポジトリでは管理しません。
 
 ## 注意
 
