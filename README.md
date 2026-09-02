@@ -13,15 +13,30 @@ claude/                  # Claude Code の設定
 └── roles/               # ロールプレイ用キャラクター設定
     ├── takanashi_yui.md # 後輩エンジニア「小鳥遊ゆい」
     └── ryland_grace.md  # プロジェクト・ヘイル・メアリーのグレース博士
+
+ghostty/                 # Ghostty（ターミナル）の設定
+└── config               # フォント・背景透過・画面分割キーバインドなど
 ```
 
 ## 使い方
+
+### Claude Code
 
 `claude/` 以下のファイルを `~/.claude/` に配置してください。
 
 ```powershell
 Copy-Item -Recurse claude\* ~\.claude\
 ```
+
+### Ghostty（macOS）
+
+`ghostty/config` を Ghostty の設定パスに配置してください。
+
+```sh
+cp ghostty/config ~/Library/Application\ Support/com.mitchellh.ghostty/config
+```
+
+配置後は Ghostty 上で Cmd + Shift + , を押すと設定をリロードできます。
 
 ## 注意
 
